@@ -1,0 +1,197 @@
+
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Kanit", sans-serif; 
+} 
+ 
+body { 
+    background-color: #f0f0f0; 
+    color: #222; 
+} 
+ 
+.container { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: 3fr 1fr; 
+    grid-template-areas: 
+        "header  header" 
+        "menu    menu" 
+        "main    sidebar" 
+        "footer  footer"; 
+    gap: 15px; 
+    background-color: #ffffff; 
+    padding: 10px; 
+} 
+ 
+/* Header */ 
+.header { 
+    grid-area: header; 
+} 
+
+.header img { 
+    width: 100%; 
+    display: block; 
+} 
+ 
+/* Menu */ 
+.menu { 
+    grid-area: menu; 
+    background-color: #82c8f8; 
+    padding: 10px 15px; 
+    display: flex; 
+    gap: 20px; 
+} 
+
+.menu a { 
+    color: #000; 
+    text-decoration: none; 
+    font-weight: 500; 
+} 
+ 
+/* Main Content Area */ 
+.main-content { 
+    grid-area: main; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+} 
+ 
+.card-box { 
+    background-color: #82c8f8; 
+    padding: 20px; 
+} 
+
+.card-box h2 { 
+    font-size: 20px; 
+    font-weight: 600;
+    margin-bottom: 8px; 
+} 
+
+.card-box p { 
+    font-size: 14px; 
+    font-weight: 300;
+    margin-bottom: 15px; 
+} 
+
+.card-box img { 
+    max-width: 450px; 
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 4px; 
+} 
+ 
+/* Sidebar Form Area */ 
+.sidebar { 
+    grid-area: sidebar; 
+    background-color: #82c8f8; 
+    padding: 15px; 
+} 
+
+.sidebar h3 { 
+    font-size: 16px; 
+    font-weight: 600;
+    margin-bottom: 12px; 
+} 
+
+.sidebar form label { 
+    display: block; 
+    font-size: 13px; 
+    font-weight: 500; 
+    margin-top: 10px; 
+    margin-bottom: 4px; 
+} 
+
+.sidebar input[type="text"], 
+.sidebar input[type="email"], 
+.sidebar input[type="password"], 
+.sidebar input[type="tel"], 
+.sidebar select { 
+    width: 100%; 
+    padding: 6px 8px; 
+    font-size: 12px; 
+    font-family: "Kanit", sans-serif;
+    border: 1px solid #ccc; 
+    border-radius: 3px; 
+    outline: none; 
+} 
+ 
+.radio-group, 
+.checkbox-group { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 8px; 
+    margin-top: 4px; 
+} 
+
+.radio-group label, 
+.checkbox-group label { 
+    font-weight: 300; 
+    font-size: 12px; 
+    margin: 0; 
+    display: flex; 
+    align-items: center; 
+    gap: 3px; 
+} 
+ 
+.agree-group { 
+    margin-top: 12px; 
+} 
+
+.agree-group label { 
+    font-weight: 500; 
+    font-size: 12px; 
+} 
+ 
+.btn-submit { 
+    width: 100%; 
+    background-color: #00008b; 
+    color: white; 
+    border: none; 
+    padding: 8px; 
+    font-size: 13px; 
+    font-family: "Kanit", sans-serif;
+    font-weight: 500; 
+    margin-top: 12px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+} 
+
+.btn-submit:hover { 
+    background-color: #00005b; 
+} 
+ 
+.privacy-note { 
+    font-size: 11px; 
+    font-weight: 300;
+    color: #555; 
+    margin-top: 8px; 
+    text-align: center; 
+} 
+ 
+/* Footer */ 
+.footer { 
+    grid-area: footer; 
+} 
+
+.footer img { 
+    width: 100%; 
+    display: block; 
+} 
+ 
+/* Responsive Grid for Smaller Screens */ 
+@media (max-width: 768px) { 
+    .container { 
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+            "header" 
+            "menu" 
+            "main" 
+            "sidebar" 
+            "footer"; 
+    } 
+}

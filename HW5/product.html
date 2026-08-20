@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA - Products</title>
+    <link rel="stylesheet" href="CSS/gridstyle.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header class="header">
+        <img src="images/header.jpg" alt="AURA Header">
+    </header>
+
+    <!-- Menu -->
+    <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="card-box">
+            <h2>Our Catalog</h2>
+            <p>Browse products and details below.</p>
+            <img src="images/product1.jpg" alt="Product 1">
+        </section>
+
+        <section class="card-box">
+            <h2>Product Name</h2>
+            <p>Short description, price, and actions (add to cart, view details).</p>
+            <img src="images/product2.jpg" alt="Product 2">
+        </section>
+    </main>
+
+    <!-- Sidebar Form -->
+    <aside class="sidebar">
+        <h3>สมัครสมาชิก</h3>
+        <form>
+            <label>ชื่อ</label>
+            <input type="text" placeholder="ชื่อจริง">
+
+            <label>นามสกุล</label>
+            <input type="text" placeholder="นามสกุล">
+
+            <label>อีเมล</label>
+            <input type="email" placeholder="example@domain.com">
+
+            <label>รหัสผ่าน</label>
+            <input type="password" placeholder="อย่างน้อย 8 ตัวอักษร">
+
+            <label>ยืนยันรหัสผ่าน</label>
+            <input type="password" placeholder="ยืนยันรหัสผ่าน">
+
+            <label>เบอร์โทรศัพท์</label>
+            <input type="tel" placeholder="083-xxx-xxxx">
+
+            <label>เพศ</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male"> ชาย</label>
+                <label><input type="radio" name="gender" value="female"> หญิง</label>
+                <label><input type="radio" name="gender" value="other"> ไม่ระบุ</label>
+            </div>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox"> รับข่าวสาร</label>
+                <label><input type="checkbox"> โปรโมชั่น</label>
+                <label><input type="checkbox"> กิจกรรม</label>
+            </div>
+
+            <label>ประเภทสมาชิก</label>
+            <select name="member-type">
+                <option value="normal">ธรรมดา</option>
+                <option value="vip">VIP</option>
+                <option value="premium">Premium</option>
+            </select>
+
+            <div class="agree-group">
+                <label><input type="checkbox" required> ยอมรับข้อกำหนดและเงื่อนไข</label>
+            </div>
+
+            <button type="submit" class="btn-submit">สมัครสมาชิก</button>
+            <p class="privacy-note">เราจะเก็บข้อมูลของคุณเป็นความลับ</p>
+        </form>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <img src="images/footer.jpg" alt="Footer">
+    </footer>
+
+</div>
+
+</body>
+</html>
